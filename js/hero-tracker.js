@@ -17,7 +17,7 @@ function HeroTracker(){
     function setPlayer1Name (name){
         player1.name = name;
     }
-
+    
     // Method to set Player2's name
     function setPlayer2Name (name){
         player2.name = name;
@@ -31,6 +31,22 @@ function HeroTracker(){
     // Method to set Player2's QR code image
     function setPlayer2QRCode (qrCodeImage){
         player2.qrCode = qrCodeImage;
+    }
+
+    function getPlayer1Name (){
+        return player1.name;
+    }
+
+    function getPlayer2Name (){
+        return player2.name;
+    }
+
+    function getPlayer1QRCode (){
+        return player1.qrCode;
+    }
+
+    function getPlayer2QRCode (){
+        return player2.qrCode;
     }
 
     // Method to start game
@@ -54,19 +70,34 @@ function HeroTracker(){
         // Assign the extracted data to the respective player's superhero
         // Implement the QR code scanning logic
 
-        player1.superhero = {
+        const superheroData = {
             name: "Superhero name",
-            location: 'Superhero Location',
-            superpowers: ["", ""],
-            weakness: "Weakness",
+            location: 'Superhero Location'
         };
+
+        player.superhero =superheroData;
     }
 
     function checkMissionSuccess(){
         // Check if player2's superhero has the ability to rescue player1's superhero
         // Implement the logic using conditional statements
-        // return true if mission is success
+        if (
+            (player1.superhero.location === 'Earth' && player2.superhero.location === 'Mars') ||
+
+            ((player1.superhero.location === 'Venus' && player2.superhero.location === 'Mercury') ||
+            (player1.superhero.location === 'Mercury' && player2.superhero.location === 'Venus')) ||
+
+            ((player1.superhero.location === 'Jupiter' && player2.superhero.location === 'Saturn') ||
+            (player1.superhero.location === 'Saturn' && player2.superhero.location === 'Jupiter')) ||
+
+            ((player1.superhero.location === 'Neptune' && player2.superhero.location === 'Uranus') ||
+            (player1.superhero.location === 'Uranus' && player2.superhero.location === 'Neptune'))  
+        ){
+            // return true if mission is success
+            return true;
+        }
         // return false if mission is unsuccessful
+        return false;   
     }
 
     return {
@@ -74,6 +105,10 @@ function HeroTracker(){
         setPlayer2Name,
         setPlayer1QRCode,
         setPlayer2QRCode,
+        getPlayer1Name,
+        getPlayer2Name,
+        getPlayer1QRCode,
+        getPlayer2QRCode,
         startGame
     }
 }
