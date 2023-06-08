@@ -1,6 +1,10 @@
 h1,h3,h2{
     text-align:center;
 }
+h2{
+    color: black;
+}
+
 .scanner-part{
     width: 500px; 
     position: relative; 
@@ -105,17 +109,35 @@ h1,h3,h2{
     .styleQR {
         display: flex ;
     }
-     .menu {
+    .menu {
         display: flex;
     }
-    .wrap {
-     
-     float: right;   
-     margin: 0 15px 0 0;   
-     border: 2px;    
-    }
+    
     body{
         background-color: #FFF0F3;
+    }
+    .scan-counter{
+        display: flex;
+    }
+    .counter {
+        font-size: 300%;
+        background-color:#f15bb5;
+        width: 1em;
+        text-align: center;
+        margin: 1em;
+        padding: 1em;
+    }
+    .counter-section {
+        margin: 1em;
+        padding: 1em;
+        border-radius: 0.25em;
+        border: 1px solid;
+    }
+    .scanner-part{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFCCD5;
+        margin: 1em;
     }
 
 
@@ -129,7 +151,7 @@ h1,h3,h2{
     margin-left: auto;
     margin-right: auto;
     background-color: #FFCCD5;
-    
+    margin: 1em;
 }
 
 .style-1{
@@ -146,4 +168,66 @@ h1,h3,h2{
 }
 .footer{
     background-color: #800F2F;
+}
+.counter-section {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 0.25em;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scan-counter{
+    display: flex;
+}
+.counter {
+    font-size: 300%;
+    background-color:#f15bb5;
+    width: 1em;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+}
+.css-rainbow-text {
+    background: linear-gradient(90deg, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2b, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d4ff, #0af, #007fff, #05f, #002bff, #00f, #2a00ff, #50f, #7f00ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+.animated_rainbow_2 {
+    text-align: center;
+    font-size: 42px;
+    font-family: Arial Black, Gadget, sans-serif;
+    -webkit-animation: animatedBackground_b 5s linear infinite alternate;
+}
+
+@keyframes animatedBackground_b{
+    0% {color: #ff8b00}
+    10% {color: #e8ff00}
+    20% {color: #5dff00}
+    30% {color: #00ff2e}
+    40% {color: #00ffb9}
+    50% {color: #00b9ff}
+    60% {color: #002eff}
+    70% {color: #5d00ff}
+    80% {color: #e800ff}
+    90% {color: #ff008b}
+    100% {color: #ff0000}
+}
+.css-flame-text {
+    background-image: linear-gradient(0deg, #f00 25%, #ffb300 60%);
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+h3{
+    text-align: center;
 }
