@@ -1,36 +1,49 @@
 // Get all DOM elements
-const player1Input = document.getElementById("player1Name");
-const player2Input = document.getElementById("player2Name");
-const startBtn = document.getElementById("startGameBtn");
+const qrCountElement = document.getElementById("qrCount");
+const qrCodeElement = document.getElementsByClassName("qrCode");
+const qrCodeBtn = document.getElementById("button")
 
-// Create HeroTracker object
-const heroTracker = HeroTracker();
 
-// Function to start the game
-function startGame() {
-    // Get the values entered for player names
-    const player1Name = player1Input.value;
-    const player2Name = player2Input.value;
+// Create an instance
+const game = RevealGame();
 
-    // Check if both player names are entered
-    if (player1Name && player2Name) {
-        // Set player names
-        heroTracker.setPlayer1Name(player1Name);
-        heroTracker.setPlayer2Name(player2Name);
+// Update qr count on webpage
+function updateQRCount (){
+    qrCountElement.textContent = game.getScannedQRCodeCount();
 
-        // Start the game
-        heroTracker.startGame();
-
-        // Pause the scanner after starting the game
-       // html5QrcodeScanner.pause();
-    } else {
-        // Display an error message or perform any other action
-        alert("Please enter both player names!");
-    }
 }
 
-// Event listener for start button
-startBtn.addEventListener("click", startGame);
+// Handle QR count scan event
+function handleScanEvent(qrCodeData){
+    const isScanned = game.scanQRCode(qrCodeData);
+    if (isScanned){
+        scannerElement.textContent = qrCodeData;
+    }else {
+        scannerElement.textContent = "QR Code already scanned, please scan another one"
+    }
+
+    updateQRCount();
+}
+
+// Handle download button click event
+function handleDownloadEvent(qrCodeData){
+    const isScanned = game.scanQRCode(qrCodeData);
+    if (isScanned){
+        scannerElement.textContent = qrCodeData;
+    }else {
+        scannerElement.textContent = "QR Code already scanned, please scan another one";
+    }
+
+    updateQRCount();
+} 
+
+// add event listeners to download button
+for(let i=0; i<qrCodeElement.length; i++){
+    const downloadButton = qrCodeElement[i].querySelector(".downloadButton");
+    const qrCodeData = qrCodeElement[i].querySelector(".img");
+    downloadButton.addEventListener("click", handleDownloadEvent);
+}
+
 
 // Perform action for the scanner
 function onScanSuccess(decodedText, decodedResult) {
@@ -39,11 +52,11 @@ function onScanSuccess(decodedText, decodedResult) {
     console.log(decodedText);
     // console.log(decodedResult);
 
-    // Set player QR code based on the decoded text
-    if (decodedText == "https://github.com/PeterManda19/bestCoders/tree/gh-pages/images") {
-        heroTracker.setPlayer1QRCode(decodedText);
+    // Set  QR code based on the decoded text
+    if (decodedText == "Pluto") {
+        (decodedText);
     } else {
-        heroTracker.setPlayer2QRCode(decodedText);
+        (decodedText);
     }
 
     setTimeout(function() {
