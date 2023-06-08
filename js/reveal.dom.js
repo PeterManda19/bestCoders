@@ -1,7 +1,7 @@
 // Get all DOM elements
 const qrCountElement = document.getElementById("qrCount");
 const qrCodeElement = document.getElementsByClassName("qrCode");
-const qrCodeBtn = document.getElementById("button")
+const qrCodeBtn = document.getElementById("button");
 
 
 // Create an instance
