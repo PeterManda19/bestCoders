@@ -1,4 +1,4 @@
-h1{
+h1,h3,h2{
     text-align:center;
 }
 .scanner-part{
@@ -100,13 +100,50 @@ h1{
 .fronts{
     opacity: 1;
 }
-@media(min-width:800px){
+@media(min-width:760px) {
     
-
-    .qrcodes{
+    .styleQR {
+        display: flex ;
+    }
+     .menu {
         display: flex;
     }
+    .wrap {
+     
+     float: right;   
+     margin: 0 15px 0 0;   
+     border: 2px;    
+    }
+    body{
+        background-color: #FFF0F3;
+    }
+
+
 }
-.qrcodes{
-    display: flex;
+
+.QR-space{
+   padding: 3.5em;
+    margin:2.5em;
+}
+.scanner-part{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFCCD5;
+    
+}
+
+.style-1{
+    background-color: #FF4D6D;
+}
+.style-2{
+    background-color: #C9184A;
+}
+.style-3{
+    background-color: #800F2F;
+}
+.header{
+    background-color: #590D22;
+}
+.footer{
+    background-color: #800F2F;
 }

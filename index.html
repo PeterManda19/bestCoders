@@ -10,11 +10,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js" integrity="sha512-r6rDA7W6ZeQhvl8S7yRVQUKVHdexq+GAlNkNNqVC7YyIV+NwqCTJe2hDWCiffTyRNOeGEzRRJ9ifvRm/HCzGYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Scan&Reveal Game</title>
+    
 </head>
 <body>
     <div class="container" >
         <div class="header" >
-       
+            <h1>Scan&Reveal Game</h1>
         </div>
         <div class="main" >
             
@@ -23,12 +24,12 @@
             
             <div class="content" >
                 <!-- QR SCANNER CODE BELOW  -->
-                <p>QR Codes Scanned: <span id="qrCount">0</span></p>
+                
                 <div id="qrCodes">
                 <div class="parts">
         
                     <div class="part scanner-section">
-                        <div class="scanner-part" id="reader">
+                        <div class="scanner-part QR-space" id="reader">
                            <div class="scanner-boarder">
                                <div class="scanner-part2">
                                   Powered by <a href="https://scanapp.org" target="new" class="part3">ScanApp</a><br><br>
@@ -60,36 +61,104 @@
                                </div>
                            </div>
                         </div>
+                    </div>
+                        <br>
                         <h2>Download or Scan The QR code</h2>
                         <div class="qrcodes">
                            
                            <div id="qrCodes">
                             <!-- QR Code 1 -->
-                            <div class="qrCode">
-                                <img src="images/Earth.png" alt="QR Code 1" width="100px">
-                                <button class="downloadBtn btn btn-primary">Download or QR Code 1</button>
-                            </div>
-                            <!-- QR Code 2 -->
-                            <div class="qrCode">
-                                <img src="images/Mercury.png" alt="QR Code 2" width="100px">
+                            <br>
+                            <h3>Fun Facts</h3>
+                            <div class="styleQR style-1">
+                                
+                            <div class="qrCode QR-space">
+                                <img src ="images/Earth.png" alt="QR Code 2" width="100px">
+                                <div>
                                 <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
+                                  
+                            </div>
+                            
+                            <!-- QR Code 2 -->
+                            <div class="qrCode QR-space">
+                                <img src="images/Mercury.png" alt="QR Code 2" width="100px">
+                                <div>
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
                             </div>
                             <!-- QR Code 3 -->
-                            <div class="qrCode">
+                            <div class="qrCode QR-space">
                                 <img src="images/Neptune.jpg" alt="QR Code 3" width="100px">
-                                <button class="downloadBtn btn btn-primary">Download or QR Code 3</button>
+                                <div>
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
                             </div>
                             <!-- QR Code 4 -->
-                            <div class="qrCode">
-                                <img src="images/Pluto.jpg" alt="QR Code 4" width="100px">
-                                <button class="downloadBtn btn btn-primary">Download or QR Code 4</button>
+
                             </div>
-                            <!-- QR Code 5 -->
-                            <div class="qrCode">
-                                <img src="images/Screenshot (16).png" alt="QR Code 5" width="100px">
-                                <button class="downloadBtn btn btn-primary">Download or QR Code 5</button>
+                            
+                            <h3>Jokes</h3>
+                            <div class="styleQR style-2">
+                                
+                            <div class="qrCode QR-space">
+                                <img src ="images/Earth.png" alt="QR Code 2" width="100px">
+                                <div >
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
+                                  
                             </div>
+                            
+                            <!-- QR Code 2 -->
+                            <div class="qrCode QR-space">
+                                <img src="images/Mercury.png" alt="QR Code 2" width="100px">
+                                <div >
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
                             </div>
+                            <!-- QR Code 3 -->
+                            <div class="qrCode QR-space">
+                                <img src="images/Neptune.jpg" alt="QR Code 3" width="100px">
+                                <div >
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
+                            </div>
+                            <!-- QR Code 4 -->
+
+                            </div>
+
+                            
+                            <h3>Did You Know?</h3>
+                            <div class="styleQR style-3">
+                                
+                            <div class="qrCode QR-space">
+                                <img src ="images/Earth.png" alt="QR Code 2" width="100px">
+                                <div >
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
+                            </div>
+                            
+                            <!-- QR Code 2 -->
+                            <div class="qrCode QR-space">
+                                <img src="images/Mercury.png" alt="QR Code 2" width="100px">
+                                <div >
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
+                            </div>
+                            <!-- QR Code 3 -->
+                            <div class="qrCode QR-space">
+                                <img src="images/Neptune.jpg" alt="QR Code 3" width="100px">
+                                <div >
+                                    <button class="downloadBtn btn btn-primary">Download or QR Code 2</button>
+                                </div>
+                            </div>
+                            <!-- QR Code 4 -->
+
+                            </div>
+
+                            
+                            </div>
+                        </div>
                         </div>
                         <div class="counter">
                         <p>QR Codes Scanned: <span id="qrCount">0</span></p>
@@ -107,7 +176,7 @@
             </div>
         </div>
         <div class="footer" >
-            
+            <h2>by:BestCoders</h2>
         </div>
     </div>
     <script src="js/reveal.js"></script>
