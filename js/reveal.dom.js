@@ -54,7 +54,7 @@ function onScanSuccess(decodedText, decodedResult) {
     console.log(decodedResult);
 
     // Set  QR code based on the decoded text
-    if (decodedText == "Pluto") {
+    if (decodedText == "Why was the JavaScript reality show cancelled after only one episode? People thought it seemed scripted.") {
         game.scanQRCode(); // Scan the QR code
         counterElem.innerText = game.getScannedQRCodeCount();
         
@@ -64,6 +64,30 @@ function onScanSuccess(decodedText, decodedResult) {
             html5QrcodeScanner.resume();
         }, 1000);
     } 
+
+    if (decodedText == "Why did the developer quit his job? He didn’t get arrays.") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+    } 
+
+    if (decodedText == "How do you comfort a JavaScript bug? You console it.") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+    } 
+
+
     setTimeout(function() {
         html5QrcodeScanner.resume();
     }, 1000);
