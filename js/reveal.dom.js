@@ -85,7 +85,37 @@ function onScanSuccess(decodedText, decodedResult) {
         setTimeout(function(){
             html5QrcodeScanner.resume();
         }, 1000);
-    } 
+    }
+    if (decodedText == "Did you know Meghan Markle and Prince Harry are incredibly distant cousins?") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+    }  
+    if (decodedText == "Did you know 40 percent of human jobs could be replaced by AI in the future?") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+    }  
+    if (decodedText == "Did you know wind on Mars is audible?") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+    }  
 
 
     setTimeout(function() {
