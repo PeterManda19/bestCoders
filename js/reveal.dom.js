@@ -39,11 +39,11 @@ function handleDownloadEvent(qrCodeData){
 } 
 
 // add event listeners to download button
-for(let i=0; i<qrCodeElement.length; i++){
-    const downloadButton = qrCodeElement[i].querySelector(".downloadButton");
-    //const qrCodeData = qrCodeElement[i].querySelector(".img");
-    downloadButton.addEventListener("click", handleDownloadEvent);
-}
+// for(let i=0; i<qrCodeElement.length; i++){
+//     const downloadButton = qrCodeElement[i].querySelector(".downloadButton");
+//     //const qrCodeData = qrCodeElement[i].querySelector(".img");
+//     downloadButton.addEventListener("click", handleDownloadEvent);
+// }
 
 
 // Perform action for the scanner
