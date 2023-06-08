@@ -1,6 +1,8 @@
 // Get all DOM elements
 const qrCountElement = document.getElementById("qrCount");
 const qrCodeElement = document.getElementsByClassName("qrCode");
+const scannerElement = document.getElementById("scanner");
+const counterElem = document.getElementById("counter");
 const qrCodeBtn = document.getElementById("button");
 
 
@@ -10,7 +12,6 @@ const game = RevealGame();
 // Update qr count on webpage
 function updateQRCount (){
     qrCountElement.textContent = game.getScannedQRCodeCount();
-
 }
 
 // Handle QR count scan event
@@ -38,11 +39,11 @@ function handleDownloadEvent(qrCodeData){
 } 
 
 // add event listeners to download button
-for(let i=0; i<qrCodeElement.length; i++){
-    const downloadButton = qrCodeElement[i].querySelector(".downloadButton");
-    const qrCodeData = qrCodeElement[i].querySelector(".img");
-    downloadButton.addEventListener("click", handleDownloadEvent);
-}
+// for(let i=0; i<qrCodeElement.length; i++){
+//     const downloadButton = qrCodeElement[i].querySelector(".downloadButton");
+//     //const qrCodeData = qrCodeElement[i].querySelector(".img");
+//     downloadButton.addEventListener("click", handleDownloadEvent);
+// }
 
 
 // Perform action for the scanner
@@ -50,12 +51,12 @@ function onScanSuccess(decodedText, decodedResult) {
     // Handle on success condition with the decoded text or result.
     // console.log(`Scan result: ${decodedText}`, decodedResult);
     console.log(decodedText);
-    // console.log(decodedResult);
+    console.log(decodedResult);
 
     // Set  QR code based on the decoded text
     if (decodedText == "Pluto") {
-        game.getScannedQRCodeCount();
-        counterElem.innerText = game.value();
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
