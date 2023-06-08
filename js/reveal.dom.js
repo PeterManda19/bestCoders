@@ -64,7 +64,6 @@ function onScanSuccess(decodedText, decodedResult) {
             html5QrcodeScanner.resume();
         }, 1000);
     } 
-
     setTimeout(function() {
         html5QrcodeScanner.resume();
     }, 1000);
