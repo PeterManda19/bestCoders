@@ -56,7 +56,7 @@ function onScanSuccess(decodedText, decodedResult) {
     // Set  QR code based on the decoded text
     if (decodedText == "Why was the JavaScript reality show cancelled after only one episode? People thought it seemed scripted.") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -67,7 +67,7 @@ function onScanSuccess(decodedText, decodedResult) {
 
     if (decodedText == "Why did the developer quit his job? He didn’t get arrays.") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -78,7 +78,7 @@ function onScanSuccess(decodedText, decodedResult) {
 
     if (decodedText == "How do you comfort a JavaScript bug? You console it.") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -88,7 +88,7 @@ function onScanSuccess(decodedText, decodedResult) {
     }
     if (decodedText == "Did you know Meghan Markle and Prince Harry are incredibly distant cousins?") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -98,7 +98,7 @@ function onScanSuccess(decodedText, decodedResult) {
     }  
     if (decodedText == "Did you know 40 percent of human jobs could be replaced by AI in the future?") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -108,7 +108,7 @@ function onScanSuccess(decodedText, decodedResult) {
     }  
     if (decodedText == "Did you know wind on Mars is audible?") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -118,7 +118,7 @@ function onScanSuccess(decodedText, decodedResult) {
     } 
     if (decodedText == "You're tallest first thing in the morning.") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -128,7 +128,7 @@ function onScanSuccess(decodedText, decodedResult) {
     } 
     if (decodedText == "Fake smiles can hurt you.") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
@@ -138,7 +138,7 @@ function onScanSuccess(decodedText, decodedResult) {
     } 
     if (decodedText == "Sleeping in a cold room can help you slim down.") {
         game.scanQRCode(); // Scan the QR code
-        counterElem.innerText = game.getScannedQRCodeCount();
+        qrCountElement.innerText = game.getScannedQRCodeCount();
         
         html5QrcodeScanner.pause();
 
