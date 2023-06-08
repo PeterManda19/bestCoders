@@ -115,6 +115,36 @@ function onScanSuccess(decodedText, decodedResult) {
         setTimeout(function(){
             html5QrcodeScanner.resume();
         }, 1000);
+    } 
+    if (decodedText == "You're tallest first thing in the morning.") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+    } 
+    if (decodedText == "Fake smiles can hurt you.") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+    } 
+    if (decodedText == "Sleeping in a cold room can help you slim down.") {
+        game.scanQRCode(); // Scan the QR code
+        counterElem.innerText = game.getScannedQRCodeCount();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
     }  
 
 
