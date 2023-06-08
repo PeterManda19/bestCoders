@@ -54,8 +54,8 @@ function onScanSuccess(decodedText, decodedResult) {
 
     // Set  QR code based on the decoded text
     if (decodedText == "Pluto") {
-        game.getScannedQRCodeCount;
-        counterElem.innerText = counter.value();
+        game.getScannedQRCodeCount();
+        counterElem.innerText = game.value();
         
         html5QrcodeScanner.pause();
 
