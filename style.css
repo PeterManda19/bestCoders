@@ -100,3 +100,13 @@ h1{
 .fronts{
     opacity: 1;
 }
+@media(min-width:800px){
+    
+
+    .qrcodes{
+        display: flex;
+    }
+}
+.qrcodes{
+    display: flex;
+}
