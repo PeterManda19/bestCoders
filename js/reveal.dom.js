@@ -4,6 +4,7 @@ const qrCodeElement = document.getElementsByClassName("qrCode");
 const scannerElement = document.getElementById("scanner");
 const counterElem = document.getElementById("counter");
 const qrCodeBtn = document.getElementById("button");
+const message = document.querySelector(".animated_rainbow_12")
 
 
 // Create an instance
@@ -57,18 +58,21 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "Why was the JavaScript reality show cancelled after only one episode? People thought it seemed scripted.") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("Why was the JavaScript reality show cancelled after only one episode? People thought it seemed scripted.");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
             html5QrcodeScanner.resume();
         }, 1000);
+        
     } 
 
     if (decodedText == "Why did the developer quit his job? He didn’t get arrays.") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("Why did the developer quit his job? He didn’t get arrays.");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
@@ -79,7 +83,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "How do you comfort a JavaScript bug? You console it.") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("How do you comfort a JavaScript bug? You console it.");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
@@ -89,7 +94,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "Did you know Meghan Markle and Prince Harry are incredibly distant cousins?") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("Did you know Meghan Markle and Prince Harry are incredibly distant cousins?");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
@@ -99,7 +105,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "Did you know 40 percent of human jobs could be replaced by AI in the future?") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("Did you know 40 percent of human jobs could be replaced by AI in the future?");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
@@ -109,7 +116,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "Did you know wind on Mars is audible?") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("Did you know wind on Mars is audible?");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
@@ -119,7 +127,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "You're tallest first thing in the morning.") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("You're tallest first thing in the morning.");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
@@ -129,7 +138,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "Fake smiles can hurt you.") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("Fake smiles can hurt you.");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
@@ -139,7 +149,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "Sleeping in a cold room can help you slim down.") {
         game.scanQRCode(); // Scan the QR code
         qrCountElement.innerText = game.getScannedQRCodeCount();
-        
+        // alert("Sleeping in a cold room can help you slim down.");
+        message.textContent = decodedText;
         html5QrcodeScanner.pause();
 
         setTimeout(function(){
